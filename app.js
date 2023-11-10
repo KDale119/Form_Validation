@@ -1,3 +1,8 @@
+document.getElementById("submit-error").addEventListener("click", function(event){
+    event.preventDefault()
+  });
+
+
 function checkName() {
     let name = document.getElementById('name').value; // length or value???
     if (name.length === 0){
@@ -37,6 +42,8 @@ function checkMsg() {
 } else {
     document.getElementById('msg-error').style.visibility = 'hidden';
 }}
+
+
 
 
 
