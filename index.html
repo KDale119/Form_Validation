@@ -11,23 +11,29 @@
     <form action="" method="" id="form">
       <div>
         <label for="name">Name:</label>
-        <input type="text" name="name" id="name" onmouseover="checkName()" />
-        <span id="name-error" onload="error()">Please enter name</span>
+        <input type="text" name="name" id="name" onkeyup="checkName()" />
+        <span id="name-error" style="visibility: hidden"
+          >Please enter name</span
+        >
       </div>
       <div>
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" onkeyup="checkEmail()" />
-        <span id="email-error" onload="error()">Enter valid email</span>
+        <span id="email-error" style="visibility: hidden"
+          >Enter valid email</span
+        >
       </div>
       <div>
         <label for="number">Number:</label>
         <input type="number" name="numb" id="numb" onkeyup="checkNumb()" />
-        <span id="numb-error" onload="error()">Enter valid phone number</span>
+        <span id="numb-error" style="visibility: hidden"
+          >Enter valid phone number</span
+        >
       </div>
       <div>
         <label for="message" class="msg">Message:</label>
         <input type="text" name="text" id="msg" onkeyup="checkMsg()" />
-        <span id="msg-error" onload="error()"
+        <span id="msg-error" style="visibility: hidden"
           >Min of 9 characters max of 250</span
         >
       </div>
